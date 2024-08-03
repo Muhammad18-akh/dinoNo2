@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.son{
+  text-align: center;
+}
+
+.game {
+  width: 646px;
+  height: 224px;
+
+  border: 2px solid #000;
+  margin: 200px auto;
+  border-radius: 30px;
+  background: url("https://i.redd.it/j0k70dc1yf9b1.gif") no-repeat center center/cover;
+}
+
+#dino {
+  width: 60px;
+  height: 60px;
+
+  background: url("https://media.tenor.com/0o0T8nh8W4EAAAAi/sonic-is-runinng-run.gif")
+   no-repeat center center/cover;
+  position: relative;
+  top: 150px;
+  left: 30px;
+  z-index: 99;
+}
+
+
+#cactus {
+  width: 30px;
+  height: 85px;
+
+  position: relative;
+  top: 90px;
+  left: 580px;
+  background: url("https://pngimg.com/uploads/cactus/cactus_PNG23622.png")
+    no-repeat center center/cover;
+  background-size: 30px 40px;
+  animation: cactus 1s infinite linear;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 115px;
+  }
+  50% {
+    top: 70px;
+  }
+  80% {
+    top: 115px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes cactus {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+
+
